@@ -66,83 +66,150 @@ nav ul li a:hover{
 }
 
 #inicio{
-    background-color: #000000;
-    color: rgb(255, 255, 255);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 
+
 .inicio-contenido h1{
-    font-size: 3rem;
+    margin: 20px;
+    font-size: 30px;
 }
 
 .inicio-contenido p{
-   font-size: 1.5rem; 
-}
-
-section{
-    background-color: #000000;
-    color: white;
-    padding: 50px 20px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 768px;
-}
-#productos h2{
-    font-family: "Rowdies", sans-serif;
-    font-size: 2.5rem;
-    align-items: center top;
-    justify-content: center top;
-    display: flex;
-    min-height: 20px;
-    position: absolute;
-    top: 160%;
- }
-section img {
-    width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: 0.8;
-    transition: 0.5s ease;
-} 
-#productos p{
-    align-items: center;
-    max-width: 800px;
-    margin: 10px;
-    font-size: 1.2rem;
-    
-}
-section img:hover{
-    cursor: crosshair;
-    width: 700px;
-    opacity: 1;
-    filter: contrast(120%);
+   margin: 20px;
+   font-size: 18px;
 }
 
 .contacto{
-    padding: 50px 20px;
+    padding: 100px 20px;
     color:white;
     background-color: #000000;
     text-align: center;
+}
+
+.contacto-item{
+    margin-bottom: 20px;
+
 }
 
 .contacto h2{
     font-family: "Rowdies", sans-serif;
     font-size: 2.5rem;
 }
+
 .contacto p{
     font-family: "Delius", cursive;
     font-size: 20px;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: 'Lato';
+    color: #ffffff;
+}
+
+img{
+    max-width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+}
+
+.banner{
+    position: relative;
+    widows: 100%;
+    height: calc(108vh - 50px);
+    background-image: url("../img/drop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.capa{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);   
+}
+
+.contenido{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.item{
+    border-radius: 10px;
+}
+.item:hover{
+    box-shadow: 0 10px 20px rgb(253, 252, 252);
+}
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+.item figure{
+    overflow: hidden;
+}
+.item:hover img{
+    transform: scale(1.2);
+}
+.info-product{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.price{
+    font-size: 18px;
+    font-weight: 900;
+}
+.info-product button{
+    border: none;
+    background: none;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
 .politica{
     background-color: #000000;
     color:white;
-    padding: 50px 20px;
+    padding: 10px 700px;
     text-align: center;
 }
 
